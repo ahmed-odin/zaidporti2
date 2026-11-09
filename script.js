@@ -4,7 +4,12 @@ const lightbox = document.querySelector(".lightbox");
 const lightboxImage = lightbox.querySelector("img");
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".navigation");
+const heroVideo = document.querySelector(".hero__video");
 let activePhoto = 0;
+
+if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  heroVideo.pause();
+}
 
 function showPhoto(index) {
   activePhoto = (index + photos.length) % photos.length;

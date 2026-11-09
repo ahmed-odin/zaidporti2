@@ -37,12 +37,19 @@
 
     <main>
       <section class="hero" id="home" aria-labelledby="hero-title">
-        <img
-          class="hero__image"
-          src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2400&q=85"
-          alt="A quiet mountain lake beneath dramatic evening clouds"
-          fetchpriority="high"
-        />
+        <video
+          class="hero__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2400&q=85"
+          aria-hidden="true"
+          tabindex="-1"
+        >
+          <source src="./video_2026-11-09_03-48-48.mp4" type="video/mp4" />
+        </video>
         <div class="hero__shade"></div>
         <div class="hero__meta mono"><span>FIELD NOTES NO. 014</span><span>46° 51′ N / 09° 31′ E</span></div>
         <div class="hero__content">
